@@ -1,26 +1,21 @@
-function palindrom(){
-    var num=prompt("Please enter a number to check palindrom or not");
-    var temp=num;
-    var rev=0;
-    var div=0;
-    while(num>0){
-        div=num%10;
-        rev=(rev*10)+div;
-        num=parseInt(num/10);
-    }
-    if(temp==rev){
-        console.log("Entered number is palindrom number ");
-    }
-    else{
-        console.log("Enter number is not a palindrom number ");
-    }
-
+function Tofahrenheit (){
+    var degC = prompt("Please enter Temperature in Celcius");
+    let degF = (degC * 9/5) +32;
+    console.log(degF);
+    
 }
 
-palindrom();
+Tofahrenheit()
 
 
+function ToCelcius (){
+    var degF = prompt("Please enter Temperature in Fahrenheit");
+    let degC = (degF - 32) * 5/9;
+    console.log(degC);
+    
+}
 
+ToCelcius()
 
 
 
